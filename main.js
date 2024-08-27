@@ -14,6 +14,8 @@ Read the terminal output before and after to see the difference
 
 ******************************************************************************/
 
+import { textChangeRangeIsUnchanged } from "typescript";
+
 export function start() {
   return true
 };
@@ -130,7 +132,7 @@ Example3: "   hard        " should return "fun"
 ******************************************************************************/
 
 export const cleanAndFun = () => {
-  //your code here
+  return cleanAndFun + text.replace ("hard","fun");
 };
 
 /******************************************************************************
