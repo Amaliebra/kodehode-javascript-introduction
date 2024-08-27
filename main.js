@@ -106,8 +106,8 @@ Example 2: ["One", "Two", "Three", "Four", "Five", "Six"] should return
 ["Two", "Three", "Four", "Five"]
 ******************************************************************************/
 
-export function arrayTrimmer() {
-  //your code here
+export function arrayTrimmer(symbols) {
+  return symbols.slice(1, symbols.length - 1);
 }
 
 /******************************************************************************
